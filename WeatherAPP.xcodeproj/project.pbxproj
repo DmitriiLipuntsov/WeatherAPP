@@ -34,6 +34,16 @@
 			path = WeatherAPP;
 			sourceTree = "<group>";
 		};
+		C04C8F492F49E3CA00F3F6A7 /* Domain */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		C04C8F4A2F49E3D900F3F6A7 /* Data */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Data;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				C04C8F372F49E20E00F3F6A7 /* .gitignore */,
+				C04C8F4A2F49E3D900F3F6A7 /* Data */,
+				C04C8F492F49E3CA00F3F6A7 /* Domain */,
 				C04C8F202F49DE3500F3F6A7 /* WeatherAPP */,
 				C04C8F1F2F49DE3500F3F6A7 /* Products */,
 			);
@@ -81,6 +93,8 @@
 			);
 			fileSystemSynchronizedGroups = (
 				C04C8F202F49DE3500F3F6A7 /* WeatherAPP */,
+				C04C8F492F49E3CA00F3F6A7 /* Domain */,
+				C04C8F4A2F49E3D900F3F6A7 /* Data */,
 			);
 			name = WeatherAPP;
 			packageProductDependencies = (
@@ -157,7 +171,6 @@
 				INFOPLIST_FILE = WeatherAPP/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -193,7 +206,6 @@
 				INFOPLIST_FILE = WeatherAPP/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
