@@ -20,7 +20,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = scene as? UIWindowScene else { return }
 
         let window = UIWindow(windowScene: windowScene)
-        let coordinator = AppCoordinator(window: window)
+        let moduleBuilder = AssemblyModuleBuilder()
+        let preloaderService = PreloaderService()
+        let coordinator = AppCoordinator(
+            window: window,
+            moduleBuilder: moduleBuilder,
+            preloaderService: preloaderService
+        )
 
         self.window = window
         self.coordinator = coordinator

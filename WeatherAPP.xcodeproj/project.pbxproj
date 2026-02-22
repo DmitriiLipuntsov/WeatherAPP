@@ -44,6 +44,11 @@
 			path = Data;
 			sourceTree = "<group>";
 		};
+		C0B53E502F4B2B4B00660B58 /* Core */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Core;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				C04C8F372F49E20E00F3F6A7 /* .gitignore */,
+				C0B53E502F4B2B4B00660B58 /* Core */,
 				C04C8F4A2F49E3D900F3F6A7 /* Data */,
 				C04C8F492F49E3CA00F3F6A7 /* Domain */,
 				C04C8F202F49DE3500F3F6A7 /* WeatherAPP */,
@@ -95,6 +101,7 @@
 				C04C8F202F49DE3500F3F6A7 /* WeatherAPP */,
 				C04C8F492F49E3CA00F3F6A7 /* Domain */,
 				C04C8F4A2F49E3D900F3F6A7 /* Data */,
+				C0B53E502F4B2B4B00660B58 /* Core */,
 			);
 			name = WeatherAPP;
 			packageProductDependencies = (
