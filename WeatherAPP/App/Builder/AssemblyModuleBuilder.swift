@@ -27,7 +27,7 @@ extension AssemblyModuleBuilder {
     }
     
     private func createWeatherModule(coordinator: AppCoordinatorProtocol) -> UIViewController {
-        let vc = WeatherViewController()
+        let vc = WeatherAssembly.build()
         return vc
     }
 }
