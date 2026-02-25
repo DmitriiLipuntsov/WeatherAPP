@@ -1,4 +1,4 @@
-<img src="[https://github.com/DmitriiLipuntsov/WeatherApp/blob/master/Images/ScreenShot1.png](https://github.com/DmitriiLipuntsov/WeatherAPP/blob/main/WeatherAPP/Assets.xcassets/AppIcon.appiconset/AppIcon%201.png)" width="200" height="200"/>
+<img src="[https://github.com/DmitriiLipuntsov/WeatherApp/blob/master/Images/ScreenShot1.png](https://github.com/DmitriiLipuntsov/WeatherAPP/blob/main/WeatherAPP/Assets.xcassets/AppIcon.appiconset/AppIcon.png)" width="200" height="200"/>
 
 # 🌦 Weather App
 iOS-приложение для отображения текущей погоды и прогнозов
