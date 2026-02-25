@@ -71,7 +71,7 @@ private extension AppCoordinator {
     func showMainFlow() {
         let weatherVC = moduleBuilder.createVC(.weather, coordinator: self)
         let navigationController = UINavigationController(rootViewController: weatherVC)
-        
+        navigationController.navigationBar.isHidden = true
         self.navigationController = navigationController
         window.rootViewController = navigationController
         
