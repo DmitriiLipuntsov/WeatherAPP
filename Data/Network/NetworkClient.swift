@@ -102,9 +102,8 @@ private extension NetworkClient {
 
 private extension NetworkClient {
     func mapError(_ error: Error) -> APIError {
-        if let apiError = error as? APIError {
-            return apiError
-        }
+        if let apiError = error as? APIError { return apiError }
+
         if let urlError = error as? URLError {
             switch urlError.code {
             case .timedOut:
@@ -113,13 +112,14 @@ private extension NetworkClient {
                 return .noInternet
             case .cancelled:
                 return .cancelled
+            case .cannotFindHost:
+                return .network(hint: "\nIf you use a VPN, try turning it off.")
             default:
-                return .network
+                return .network()
             }
         }
-        if error is DecodingError {
-            return .decoding
-        }
+
+        if error is DecodingError { return .decoding }
         return .unknown
     }
 }

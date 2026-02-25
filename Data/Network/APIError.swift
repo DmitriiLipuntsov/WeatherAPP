@@ -8,9 +8,8 @@
 import Foundation
 
 public enum APIError: LocalizedError, Equatable {
-    
     case invalidURL
-    case network
+    case network(hint: String? = nil) // добавляем optional hint
     case timeout
     case noInternet
     case cancelled
@@ -20,12 +19,15 @@ public enum APIError: LocalizedError, Equatable {
     case forbidden
     case notFound
     case unknown
-    
+
     public var errorDescription: String? {
         switch self {
         case .invalidURL:
             return "Invalid URL."
-        case .network:
+        case .network(let hint):
+            if let hint = hint {
+                return "Network error occurred. \(hint)"
+            }
             return "Network error occurred."
         case .timeout:
             return "Request timed out."

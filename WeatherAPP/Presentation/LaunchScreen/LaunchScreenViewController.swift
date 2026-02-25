@@ -21,7 +21,7 @@ class LaunchScreenViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .white
+        applyMainGradientBackground()
         setupUI()
     }
 }
@@ -35,7 +35,7 @@ extension LaunchScreenViewController {
     private func setupTitleLabel() {
         let label = titleLabel
         label.text = "Weather App"
-        label.textColor = .black
+        label.textColor = .white
         label.numberOfLines = 1
         label.textAlignment = .center
         label.font = .systemFont(ofSize: 26, weight: .bold)
